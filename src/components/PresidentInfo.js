@@ -7,9 +7,10 @@ import PresidentInfoFooter from './PresidentInfoFooter';
 export default class PresidentInfo extends React.Component {
 	render() {
 		return (
-			<PresidentInfoHeading />
-			<PresidentInfoBody />
-			<PresidentInfoFooter />
+			<section>
+				<PresidentInfoHeading />
+				<PresidentInfoBody />
+			</section>
 		);
 	}
 }

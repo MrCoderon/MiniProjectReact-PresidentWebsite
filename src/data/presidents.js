@@ -17,7 +17,7 @@ const presidents = [
     'religion': 'Episcopalian',
     'education': 'No formal education',
     'occupation': 'Planter, Soldier',
-    'political-party': 'No formal political party affiliation.',
+    'political-party': '',
     'vice-president': 'John Adams',
     'events': [
       { 'year': '1789', 'event': 'The Judiciary Act specified the number of Federal courts and judges.'},
