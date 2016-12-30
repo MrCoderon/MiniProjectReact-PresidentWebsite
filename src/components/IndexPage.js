@@ -2,7 +2,7 @@ import React from 'react';
 import PresidentPreview from './PresidentPreview';
 import presidents from '../data/presidents';
 
-export default class IndexPage extends React.Coomponent {
+export default class IndexPage extends React.Component {
 	render() {
 		return (
 			<div className="home">

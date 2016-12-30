@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class PresidentPreview extends React.Coomponent {
+export default class PresidentPreview extends React.Component {
 	render() {
 		return (
 			<Link to={`/president/${this.props.id}`}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import presidents from '../data/presidents';
 
-export default class PresidentMenu extends React.Coomponent {
+export default class PresidentMenu extends React.Component {
 	render() {
 		return (
 			<header>

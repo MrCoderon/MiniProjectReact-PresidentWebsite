@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 import NotFoundPage from './NotFoundPage';
 import PresidentsMenu from './PresidentMenu';
 import presidents from '../data/presidents';
-import Task from './Task';
+import Task from './PresidentInfo';
 
-export default class PresidentPage extends React.Coomponent {
+export default class PresidentPage extends React.Component {
 	render() {
 		const id = this.props.params.id;
 		const president = presidents.filter((president) => president.id === id)[0];
