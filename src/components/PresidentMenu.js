@@ -5,10 +5,10 @@ import presidents from '../data/presidents';
 export default class PresidentMenu extends React.Component {
 	render() {
 		return (
-			<header>
+			<header className="row">
 				<nav className="president-menu">
 					{presidents.map(menuPresident => {
-						return <Link key={menuPresident.id} to={`/president/${menuPresident.id}`} activeClassName="active">
+						return <Link key={menuPresident.id} className="col-lg-3" to={`/president/${menuPresident.id}`} activeClassName="active">
 							<p className="menulinks">{menuPresident.name}</p>			
 						</Link>;
 					})}

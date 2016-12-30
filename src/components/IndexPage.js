@@ -5,8 +5,8 @@ import presidents from '../data/presidents';
 export default class IndexPage extends React.Component {
 	render() {
 		return (
-			<div className="home">
-				<div className="presidents-selector">
+			<div className="home col-lg-12">
+				<div className="presidents-selector row">
 					{ presidents.map(presidentData => <PresidentPreview key={presidentData.id} {...presidentData}/>) }
 				</div>
 			</div>

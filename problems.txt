@@ -1,0 +1,3 @@
+Problem: Users are still able to create duplicate task.
+
+Solved: I checked the lodash documents and found that my syntax was a bit off. The original code was: _.find(this.props.todos, todo => task.todo === task). I corrected my code by adding brackets and a return statement: _.find(this.props.todos, todo => { return todo.task === task })

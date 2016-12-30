@@ -1,41 +1,51 @@
-const webpack = require('webpack');
-const path = require('path');
+var webpack = require('webpack');
+var path = require('path');
 
+var BUILD_DIR = path.resolve(__dirname,'public');
 var APP_DIR = path.resolve(__dirname,'src');
-var BUILD_DIR = path.resolve(__dirname,'src/static/assets/js/');
 
 var config = {
-  entry: [
-  	APP_DIR + "/app-client.js"
-  ],
-  output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
-  },
-  module: {
-    loaders: [{
-      test: path.join(__dirname, 'src'),
-      loader: ['babel-loader'],
-      query: {
-        cacheDirectory: 'babel_cache',
-        presets: ['react', 'es2015']
-      }
-    }]
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      mangle: true,
-      sourcemap: false,
-      beautify: false,
-      dead_code: true
-    })
-  ]
+   devtool: 'inline-source-map',
+   entry: [
+      'webpack-dev-server/client?http://127.0.0.1:8080',
+      'webpack/hot/only-dev-server',
+      './src/index.js'
+   ],
+   output: {
+      path: path.join(__dirname, 'public/assets/js'),
+      filename: 'qraynix.bundle.js',
+      publicPath: '/'
+   },
+   resolve: {
+      modulesDirectories: [
+         'node_modules', 
+         'src'
+      ],
+      extensions: ['', '.js', '.jsx']
+   },
+   devServer: {
+      inline: true,
+      port: 8080
+   },
+
+   module: {
+      loaders: [
+         {
+            test: /\.jsx?$/,
+            include: APP_DIR,
+            exclude: /node_modules/,
+            loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015']
+         },
+         {
+            test: /\.scss$/,
+            loaders: ['style', 'css', 'sass']
+         }
+      ]
+   },
+   plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NoErrorsPlugin()  
+   ]
 };
 
 module.exports = config;
