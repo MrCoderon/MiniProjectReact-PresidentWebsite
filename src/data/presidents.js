@@ -33,7 +33,7 @@ const presidents = [
   },
   {
     'id': 'john-adams',
-    'title': '2st President of the United States',
+    'title': '2nd President of the United States',
     'name': 'John Adams',
     'partysymbol': 'federalist.png',
     'birth': 'October 30, 1735',
@@ -122,7 +122,7 @@ const presidents = [
   },
   {
     'id': 'james-monroe',
-    'title': '5st President of the United States',
+    'title': '5th President of the United States',
     'name': 'James Monroe',
     'birth': 'April 28, 1758',
     'image': 'jamesmonroe.gif',
