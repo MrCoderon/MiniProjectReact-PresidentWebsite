@@ -14,7 +14,7 @@ export default class PresidentPage extends React.Component {
 		if(!president) {
 			return <NotFoundPage />;
 		}
-		const headerStyle = { backgroundImage: `url(../assets/img/${president.cover})` };
+		const headerStyle = { backgroundImage: `url(../img/${president.cover})` };
 		return (
 			<div className="container-fluid col-lg-12">
 				<div className="row">
@@ -27,8 +27,8 @@ export default class PresidentPage extends React.Component {
 					<section className="col-lg-12 info-events">
 					<div className="picture-container col-lg-12">
 						<div className="row">
-							<div className="img-container col-lg-4">
-								<img className="" src={`../assets/img/${president.image}`}/>
+							<div className="img-container col-lg-12">
+								<img className="" src={`../img/${president.image}`}/>
 							</div>
 						</div>
 						<div className="row">
@@ -41,8 +41,8 @@ export default class PresidentPage extends React.Component {
 									<h4 className="events-title">Events: </h4>
 									{president.events.map((event, i) => <Events key={i} {...event} />)}
 								</ul>
-								<div className="col-lg-12 description">
-									Find out more on <a href={president.link} target="_blank">Wikipedia</a>
+								<div className="col-lg-12">
+									Find out more on <a className="description" href={president.link} target="_blank">Wikipedia</a>
 								</div>
 							</div>
 						</div>
@@ -52,7 +52,7 @@ export default class PresidentPage extends React.Component {
 					</div>
 				</div>
 				<div className=" col-lg-12 navigateBack">
-					<Link to=""> Back to Home</Link>
+					<Link to="/"> Back to Home</Link>
 				</div>
 			</div>
 			</div>

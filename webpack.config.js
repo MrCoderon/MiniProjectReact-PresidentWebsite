@@ -1,8 +1,9 @@
-var webpack = require('webpack');
-var path = require('path');
-
-var BUILD_DIR = path.resolve(__dirname,'public');
-var APP_DIR = path.resolve(__dirname,'src');
+var 
+    webpack             =   require('webpack'),
+    path                =   require('path'),
+    BUILD_DIR           =   path.resolve(__dirname,'src/public'),
+    ExtractTextPlugin   =   require("extract-text-webpack-plugin"),
+    APP_DIR             =   path.resolve(__dirname,'src');
 
 var config = {
    devtool: 'inline-source-map',
@@ -12,8 +13,8 @@ var config = {
       './src/index.js'
    ],
    output: {
-      path: path.join(__dirname, 'public/assets/js'),
-      filename: 'qraynix.bundle.js',
+      path: path.join(__dirname, 'src/public/js'),
+      filename: 'qraynix.react.js',
       publicPath: '/'
    },
    resolve: {
@@ -27,7 +28,6 @@ var config = {
       inline: true,
       port: 8080
    },
-
    module: {
       loaders: [
          {
@@ -38,13 +38,14 @@ var config = {
          },
          {
             test: /\.scss$/,
-            loaders: ['style', 'css', 'sass']
+            loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader!sass-loader")
          }
       ]
    },
    plugins: [
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin()  
+      new webpack.NoErrorsPlugin(),
+      new ExtractTextPlugin("../css/qraynix.react.css"),
    ]
 };
 

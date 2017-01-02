@@ -5,7 +5,7 @@ html {
 		@extend html;
 		background-color: rgba(0, 0, 0, 1);
 		position: relative;
-		background-image: url(/assets/img/americanflag.gif);
+		background-image: url(/img/americanflag.gif);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -35,32 +35,16 @@ html {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	overflow: hidden;
-	margin-top: 10em;
 	.app-content {
 		overflow: hidden;
 	}
 }
 
-.president-menu {
-	background-color: rgba(170, 10, 10, 1);
-	a {
-		text-decoration: none;
-		&:hover, &:active, &:focus {
-			text-decoration: none;
-		}
-		p {
-			color: white;
-			font-size: 1.5em;
-		}
-	}
-
-}
 
 .header-img {
 	min-height: 38em;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
-	width: 100vw;
+	background-size: cover;
 	position: relative;
 	left: 2.2em;
 	box-shadow: 0px 0px 30px 1px black;
@@ -70,16 +54,12 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	a {
-		img {
-		}
-	}
 }
 
 .picture-container {
 	position: relative;
 	.img-container {
-		top: -12em;
+		
 		img {
 			position: relative;
 			height: 30em;
@@ -164,16 +144,13 @@ html {
 		border-top-right-radius: 0px;
 		border-top-left-radius: 0px;
 	}
-	h2 {
-		
-	}
 }
 
 .img-preview-txt {
 	color: white;
 	white-space: nowrap;
 	position: absolute;
-	bottom: 0;
+	bottom: 10;
 	text-align: center;
 	font-size: 1.8em;
 	width: 100%;
@@ -190,17 +167,36 @@ html {
 	display: none;
 }
 
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
+.description {
+	color: rgba(220, 220, 220, 1);
+	font-size: 1.3em;
+	transition: 0.3s ease-in-out;
+	text-decoration: underline;
+	&:hover, &:active, &:focus {
+		color: rgba(190, 0, 0, 1);
+	}
+}
 
-    }
+.not-found {
+	a {
+		color: rgba(220, 220, 220, 1);
+		font-size: 1.3em;
+		transition: 0.3s ease-in-out;
+		text-decoration: underline;
+		&:hover, &:active, &:focus {
+			color: rgba(190, 0, 0, 1);
+		}
+	}
+}
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
+.navigateBack {
+	a {
+		text-decoration: underline;
+		color: rgba(220, 220, 220, 1);
+		font-size: 1.3em;
+		transition: 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: rgba(190, 0, 0, 1);
+		}
+	}
+}

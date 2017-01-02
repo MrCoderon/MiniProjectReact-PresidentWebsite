@@ -1,0 +1,172 @@
+html, html body {
+  height: 100%;
+  width: 100%; }
+  html body {
+    background-color: black;
+    position: relative;
+    background-image: url(/img/americanflag.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    html body:after {
+      content: "";
+      min-height: 100%;
+      background-color: rgba(0, 0, 0, 0.93);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: -2; }
+
+* {
+  box-sizing: border-box; }
+  * ul {
+    list-style: none; }
+
+.app-container {
+  background-color: transparent;
+  position: relative;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  overflow: hidden; }
+  .app-container .app-content {
+    overflow: hidden; }
+
+.header-img {
+  min-height: 38em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 2.2em;
+  box-shadow: 0px 0px 30px 1px black; }
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.picture-container {
+  position: relative; }
+  .picture-container .img-container img {
+    position: relative;
+    height: 30em;
+    box-shadow: 0px 0px 20px 2px black; }
+  .picture-container .txt-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: relative;
+    color: white; }
+    .picture-container .txt-container .events-title {
+      font-size: 1.4em;
+      font-weight: bolder;
+      color: darkred; }
+    .picture-container .txt-container .event {
+      padding-left: 1.5em; }
+      .picture-container .txt-container .event span {
+        color: darkred; }
+      .picture-container .txt-container .event .event-event {
+        margin-left: 0.6em;
+        color: #bebebe; }
+    .picture-container .txt-container span {
+      text-align: center;
+      font-size: 1.4em;
+      color: #bebebe;
+      margin-bottom: 4em; }
+      .picture-container .txt-container span span {
+        font-weight: bolder;
+        color: darkred; }
+    .picture-container .txt-container .info-heading-container span {
+      color: gainsboro;
+      font-size: 1.3em; }
+      .picture-container .txt-container .info-heading-container span span {
+        font-weight: bolder;
+        color: darkred; }
+    .picture-container .txt-container .info-body-container span {
+      color: gainsboro;
+      font-size: 1.3em; }
+      .picture-container .txt-container .info-body-container span span {
+        font-weight: bolder;
+        color: darkred; }
+
+.info-events {
+  margin: 0 auto;
+  position: relative;
+  top: -12em; }
+  .info-events .name {
+    text-align: center;
+    font-size: 3.8em;
+    font-weight: bolder;
+    color: darkred; }
+
+.preview {
+  position: relative;
+  border: 1px solid white; }
+  .preview .img-preview {
+    height: 20em;
+    width: 100%;
+    padding: 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px; }
+
+.img-preview-txt {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 10;
+  text-align: center;
+  font-size: 1.8em;
+  width: 100%; }
+
+.party-img {
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  right: 0;
+  margin: 1em;
+  opacity: 0.4;
+  background-color: white;
+  display: none; }
+
+.description {
+  color: gainsboro;
+  font-size: 1.3em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline; }
+  .description:hover, .description:active, .description:focus {
+    color: #be0000; }
+
+.not-found a {
+  color: gainsboro;
+  font-size: 1.3em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline; }
+  .not-found a:hover, .not-found a:active, .not-found a:focus {
+    color: #be0000; }
+
+.navigateBack a {
+  text-decoration: underline;
+  color: gainsboro;
+  font-size: 1.3em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .navigateBack a:hover, .navigateBack a:active, .navigateBack a:focus {
+    color: #be0000; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3MvcXJheW5peC5yZWFjdC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
