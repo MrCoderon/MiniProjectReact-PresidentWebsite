@@ -13,9 +13,6 @@ export default class PresidentInfoBody extends React.Component {
 				<li className="info-body-wife">
 					<span className="wife"><span>Spouse: </span>{this.props.president.wife}</span>
 				</li>
-				<li className="info-body-children">
-					<span className="children"><span>Children: </span>{this.props.president.children}</span>
-				</li>
 				<li className="info-body-religion">
 					<span className="religion"><span>Religion: </span>{this.props.president.religion}</span>
 				</li>

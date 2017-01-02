@@ -28,6 +28,7 @@ html {
 	}
 }
 
+
 .app-container {
 	background-color: rgba(0, 0, 0, 0);
 	position: relative;
@@ -59,10 +60,9 @@ html {
 	min-height: 38em;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	width: 90%;
+	width: 100vw;
 	position: relative;
 	left: 2.2em;
-	border: 3px solid rgba(230, 230, 230, 1);
 	box-shadow: 0px 0px 30px 1px black;
 }
 
@@ -77,13 +77,13 @@ html {
 }
 
 .picture-container {
-	
+	position: relative;
 	.img-container {
+		top: -12em;
 		img {
 			position: relative;
-			border: 3px solid rgba(200, 200, 200, 1);
 			height: 30em;
-			width: 29em;
+		
 			box-shadow: 0px 0px 20px 2px black;
 		}
 	}
@@ -91,15 +91,54 @@ html {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		width: 100%;
 		position: relative;
-		top: 11em;
 		color: white;
+		.events-title {
+				font-size: 1.4em;
+				font-weight: bolder;
+				color: darkred;
+			}
+			.event {
+				padding-left: 1.5em;
+				span {
+					color: darkred;
+				}
+				.event-event {
+					margin-left: 0.6em;
+					color: rgba(190, 190, 190, 1);
+				}
+			}
 		span {
 			text-align: center;
-			font-size: 3em;
+			font-size: 1.4em;
 			color: rgba(190, 190, 190, 1);
+			margin-bottom: 4em;
+			span {
+				font-weight: bolder;
+				color: darkred;
+			}
 		}
-
+		.info-heading-container {
+			span {
+				color: rgba(220, 220, 220, 1);
+				font-size: 1.3em;
+				span {
+					font-weight: bolder;
+					color: darkred;
+				}
+			}
+		}
+		.info-body-container {
+			span {
+				color: rgba(220, 220, 220, 1);
+				font-size: 1.3em;
+				span {
+					font-weight: bolder;
+					color: darkred;
+				}
+			}
+		}
 	}
 }
 
@@ -112,28 +151,6 @@ html {
 		font-size: 3.8em;
 		font-weight: bolder;
 		color: darkred;
-	}
-}
-
-.info-heading-container {
-	span {
-		color: rgba(220, 220, 220, 1);
-		font-size: 1.3em;
-		span {
-			font-weight: bolder;
-			color: darkred;
-		}
-	}
-}
-
-.info-body-container {
-	span {
-		color: rgba(220, 220, 220, 1);
-		font-size: 1.3em;
-		span {
-			font-weight: bolder;
-			color: darkred;
-		}
 	}
 }
 
@@ -172,14 +189,6 @@ html {
 	background-color: white;
 	display: none;
 }
-
-/* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-			.name {
-				text-align: center;
-				font-size: 115em;
-				font-weight: bolder;
-			}    }
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
