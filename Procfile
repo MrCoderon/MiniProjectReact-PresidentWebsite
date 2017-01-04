@@ -1,1 +1,1 @@
-web: bin/babel-node --presets 'react,es2015' src/server.js
+web: babel-node src/server.js
