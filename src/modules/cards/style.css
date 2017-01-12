@@ -1,0 +1,27 @@
+.MainCard {
+    background-color: #B71C1C!important;
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px!important;
+    overflow: hidden;
+    min-height: 28em;
+    margin-bottom: 2em;
+    position: relative!important;
+    box-shadow: 10px 10px 30px -10px black!important;
+}
+
+.MainCard img {
+    min-height: 25em;
+    max-height: 30em;
+}
+
+.overlay-title span:nth-child(1) {
+    font-size: 3em!important;
+    text-align: center!important;
+    font-family: 'Italianno', cursive;
+}
+
+.overlay-title span:nth-child(2) {
+    font-size: 2em!important;
+    text-align: center!important;
+    font-family: 'Italianno', cursive;
+}

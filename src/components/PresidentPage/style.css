@@ -1,0 +1,56 @@
+.PresidentPage {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -3em;
+}
+
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 30em;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.col-center {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portrait {
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5em;
+    border-radius: 20px;
+    border: 1em solid #B71C1C;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.Portrait-right {
+    height: 20em;
+    width: 20em;
+    margin: 0 auto;
+}
+
+.Portrait-center {
+    height: 30em;
+}
+
+.Portrait-left {
+    height: 20em;
+    width: 20em;
+    margin: 0 auto;
+}
+
+.PresidentPage h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Italianno', cursive;
+}

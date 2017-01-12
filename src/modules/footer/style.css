@@ -1,0 +1,13 @@
+.Footer-Main {
+    background-color: #B71C1C!important;
+    position: relative!important;
+    box-shadow: 0px 0px 20px 0px black!important;
+    bottom: 0;
+}
+
+.Footer-Main h1 {
+    color: white!important;
+    font-size: 3em!important;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}

@@ -1,8 +1,21 @@
+/**
+ * Imported Modules
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRoutes from './components/AppRoutes';
-import './styles/mainstyle.scss';
 
-window.onload = () => {
-  ReactDOM.render(<AppRoutes/>, document.getElementById('app'));
-};
+
+/**
+ * Imported Components
+ */
+import Routes from './components/Routes';
+
+/**
+ * Imported Images and Styles
+ */
+import "./style.css";
+
+ReactDOM.render(
+  <Routes />,
+  document.getElementById('root')
+);

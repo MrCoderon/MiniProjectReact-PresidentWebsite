@@ -1,0 +1,8 @@
+DarkPrimaryColor: #B71C1C,
+PrimaryColor: #F44336,
+LightPrimaryColor: #EF9A9A,
+TextIconsColor: #FFFFFF,
+AccentColor: #2196F3,
+PrimaryText: #212121,
+SecondaryText: #757575,
+DividerColor: #BDBDBD;

@@ -11,6 +11,16 @@ const presidents = [
     'nickname': 'Father of His Country',
     'died': 'December 14, 1799',
     'father': 'Augustine Washington',
+    'next': {
+      'img': 'johnadams.jpg',
+      'id': 'john-adams',
+      'name': 'John Adams'
+    },
+    'prev': {
+      'img': 'none',
+      'id': 'none',
+      'name': 'none'
+    },
     'mother': 'Mary Ball Washington',
     'wife': 'Martha Dandridge Cutis',
     'children': 'John "Jack" Parke Custis (adopted), Martha "Patsy" Cutis (adopted)',
@@ -38,6 +48,16 @@ const presidents = [
     'partysymbol': 'federalist.png',
     'birth': 'October 30, 1735',
     'image': 'johnadams.jpg',
+    'next': {
+      'img': 'thomasjefferson.jpg',
+      'id': 'thomas-jefferson',
+      'name': 'Thomas Jefferson'
+    },
+    'prev': {
+      'img': 'georgewashington.jpg',
+      'id': 'george-washington',
+      'name': 'George Washington'
+    },
     'cover': 'johnadamscover.jpg',
     'link': 'https://en.wikipedia.org/wiki/John_Adams',
     'office': 'March 4, 1797 - March 3, 1801',
@@ -73,6 +93,16 @@ const presidents = [
     'nickname': '"Man of the People"',
     'died': ' July 4, 1826',
     'father': 'Peter Jefferson',
+    'next': {
+      'img': 'jamesmadison.jpg',
+      'id': 'james-madison',
+      'name': 'James Madison'
+    },
+    'prev': {
+      'img': 'johnadams.jpg',
+      'id': 'john-adams',
+      'name': 'John Adams'
+    },
     'mother': 'Jane Randolph Jefferson',
     'wife': 'Martha Wayles Skelton',
     'children': 'Martha Washington Jefferson, Jane Randolph Jefferson, infant son, Mary Jefferson, Lucy Elizabeth Jefferson, Lucy Elizabeth Jefferson',
@@ -105,6 +135,16 @@ const presidents = [
     'father': 'James Madison',
     'mother': 'Nelly Conway Madison',
     'wife': 'Dolley Payne Todd',
+    'next': {
+      'img': 'jamesmonroe.gif',
+      'id': 'james-monroe',
+      'name': 'James Monroe'
+    },
+    'prev': {
+      'img': 'thomasjefferson.jpg',
+      'id': 'thomas-jefferson',
+      'name': 'Thomas Jefferson'
+    },
     'children': 'None',
     'religion': 'Episcopalian',
     'education': 'Graduated from College of New Jersey (now Princeton University)',
@@ -132,6 +172,16 @@ const presidents = [
     'office': 'March 4, 1817 - March 3, 1825',
     'nickname': 'Era-of-Good-Feeling President',
     'died': 'July 4, 1831',
+    'next': {
+      'img': 'johnquincyadams.jpg',
+      'id': 'john-quincy-adams',
+      'name': 'John Quincy Adams'
+    },
+    'prev': {
+      'img': 'jamesmadison.jpg',
+      'id': 'james-madison',
+      'name': 'James Madison'
+    },
     'father': 'Spence Monroe',
     'mother': 'Elizabeth "Eliza" Kortright',
     'wife': 'Martha Dandridge Cutis',
@@ -161,6 +211,16 @@ const presidents = [
     'office': 'March 4, 1825 to March 3, 1829',
     'nickname': 'Old Man Eloquent',
     'died': 'February 23, 1848',
+    'next': {
+      'img': 'andrewjackson.jpg',
+      'id': 'andrew-jackson',
+      'name': 'Andrew Jackson'
+    },
+    'prev': {
+      'img': 'jamesmonroe.gif',
+      'id': 'james-monroe',
+      'name': 'James Monroe'
+    },
     'father': 'John Adams',
     'mother': 'Abigail Smith Adams',
     'wife': 'Louisa Catherine Johnson',
@@ -190,6 +250,16 @@ const presidents = [
     'office': 'April 30, 1789 - March 3, 1797',
     'nickname': 'Father of His Country',
     'died': 'June 8, 1845',
+    'next': {
+      'img': 'none',
+      'id': 'none',
+      'name': 'none'
+    },
+    'prev': {
+      'img': 'johnquincyadams.jpg',
+      'id': 'john-quincy-adams',
+      'name': 'John Quincy Adams'
+    },
     'father': 'Andrew Jackson',
     'mother': 'Elizabeth Hutchinson Jackson',
     'wife': 'Rachel Donelson Robards (1767-1828)',

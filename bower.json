@@ -1,0 +1,20 @@
+{
+  "name": "DaufaultBoilerplate",
+  "description": "Boilerplate for react",
+  "main": "",
+  "authors": [
+    "QCollins"
+  ],
+  "license": "MIT",
+  "homepage": "qcollins.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
